@@ -210,7 +210,7 @@
                   <p>Number</p>
                   <h4 id="userPhone">(270)555-0117</h4>
                   <p>Balance</p>
-                  <h4 id="userBalance">BR 40,000</h4>
+                  <h4 id="userBalance">$40,000</h4>
                 </div>
                 <div class="section1-3-buttons">
                   <button class="gradient-button" onclick="openModal('modal1')">
@@ -232,7 +232,7 @@
                     <img src="images/AccountBalance.svg" />
                     <p>Account Balance</p>
                   </div>
-                  <h3 id="userAccountBalance">BR 40,000</h3>
+                  <h3 id="userAccountBalance">$40,000</h3>
                 </div>
               </div>
               <div class="section3">
@@ -318,9 +318,9 @@
         <input id="withdrawAmount" type="text" placeholder="Enter Amount" />
         <div class="info">
           <span class="info-head">Current Balance</span>
-          <span class="Sub_head" id="currentBalance">BR 40,000</span>
+          <span class="Sub_head" id="currentBalance">$40,000</span>
           <span class="info-head">Maximum Limit</span>
-          <span class="Sub_head">BR 80,000</span>
+          <span class="Sub_head">$80,000</span>
         </div>
         <div class="btn">
           <button id="withdrawBtn">Done</button>
@@ -397,13 +397,13 @@
         document.getElementById("userPhone").textContent = user.phone;
         document.getElementById(
           "userBalance"
-        ).textContent = `BR ${user.balance}`;
+        ).textContent = `$${user.balance}`;
         document.getElementById(
           "userAccountBalance"
-        ).textContent = `BR ${user.balance}`;
+        ).textContent = `$${user.balance}`;
         document.getElementById(
           "currentBalance"
-        ).textContent = `BR ${user.balance}`;
+        ).textContent = `$${user.balance}`;
 
         const transactionHistory =
           document.getElementById("transactionHistory");
